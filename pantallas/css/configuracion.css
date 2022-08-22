@@ -7,18 +7,23 @@
 html {
     font-family: monospace;
     font-size: 10px;
+    color: var(--colorTexto);
 }
 
 :root {
     --colorRojo: red;
     --colorVerde: green;
     --colorAzul: blue;
+    --colorTexto: rgb(14, 14, 14);
+
+    --sizeParrafo: 1.2rem;
 }
 
 #root {
     max-width: 37.5rem;
     height: 100rem;
     margin: auto;
+    padding: 1rem 1rem;
 
-    background-color:blue;
+    background-color:rgb(255, 255, 255);
 }
