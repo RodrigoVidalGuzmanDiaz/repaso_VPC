@@ -13,5 +13,10 @@ export let producto = [
         img : 'https://c8.alamy.com/zoomses/9/8943248bf0764b298b579dddfa46be79/2a4w7wr.jpg',
         descripcion: 'Pera de Guatemala',
         precio: 75
+    },
+    {
+        img : 'https://cdn.elnacional.com/wp-content/uploads/2018/01/durazno-tiene-multiples-propiedades-medicinales_221238.jpg',
+        descripcion: 'Durazno de Guatemala',
+        precio: 30
     }
 ];

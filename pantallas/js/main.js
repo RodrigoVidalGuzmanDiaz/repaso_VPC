@@ -6,7 +6,9 @@ let root = document.querySelector("#root");
 
 // Crear una sección
 let galeria = document.createElement("section");
-galeria.innerHTML = item;
+galeria.setAttribute("class","galeria");
+
+galeria.innerHTML = item(1);
 
 
 // GREGAR AL DOM

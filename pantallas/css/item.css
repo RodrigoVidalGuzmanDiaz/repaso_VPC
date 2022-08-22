@@ -1,6 +1,16 @@
+.galeria {
+    max-width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
 .item {
     width: 15rem;
     border-radius: 5px;
+    margin-top: 3rem;
 
     -webkit-box-shadow: 3px 4px 5px 0px rgba(204,204,204,1);
     -moz-box-shadow: 3px 4px 5px 0px rgba(204,204,204,1);
