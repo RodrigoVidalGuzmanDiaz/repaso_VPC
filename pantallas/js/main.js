@@ -1,15 +1,23 @@
 import {item} from "./componentes/itemGaleria.js";
-
-
+import {producto} from "./data/img.js"
 let root = document.querySelector("#root");
 
 
-// Crear una sección
-let galeria = document.createElement("section");
-galeria.setAttribute("class","galeria");
+function cargarGaleria(){
 
-galeria.innerHTML = item(1);
+    let galeria = document.querySelector("#galeria");
+
+    producto.forEach(function(elemento,indice){
+
+        let div = document.createElement("div");
+        div.setAttribute("class","item");
+        div.innerHTML = item(indice);
+
+        galeria.appendChild(div);
+    })
+
+}
+
+cargarGaleria();
 
 
-// GREGAR AL DOM
-root.appendChild(galeria);

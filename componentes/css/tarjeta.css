@@ -1,0 +1,49 @@
+#root {
+    width: 76.5rem;
+    height: auto;
+    border: 3px dashed rgb(19, 15, 15);
+    margin: auto;
+    margin-top: 5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    margin: 1.2rem;
+    border-radius: 5px;
+    background-color: rgb(245, 52, 27);
+
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.contenido {
+    width: 10rem;
+    height: 10rem;
+
+    font-size: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(245, 52, 27);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    cursor: pointer;
+
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+}
+.tarjeta:hover {
+    background-color: rgb(255, 121, 103);
+}
+
+
+.activo {
+    transition: 0.5s linear;
+    transform: rotateY(180deg);
+}
